@@ -1,50 +1,34 @@
-# Bash Scripting Exercises
-
-This repository contains a collection of Bash scripts aimed at practicing various tasks.
-
----
-
-## Tasks Overview
-
-### Task 1: Greeting Script
-- **Script Name:** `greeting.sh`
-- **Description:** Asks for a user's name and sends a greeting to them.
-
-### Task 2: Passing Variables Between Scripts
-- **Script 1 Name:** `s1.sh`
-  - Contains a variable `x` with a value of `5`.
-- **Script 2 Name:** `s2.sh`
-  - Attempts to print the value of `x` from `s1.sh` by two different methods.
-
-### Task 3: File Copying Script
-- **Script Name:** `mycp.sh`
-  - Copies a single file to another location.
-  - Copies multiple files to a directory.
-
-### Task 4: Directory Changing Script
-- **Script Name:** `mycd.sh`
-  - Changes the directory to the user's home directory if called without arguments.
-  - Changes the directory to the given directory if an argument is provided.
-
-### Task 5: Directory Listing Script
-- **Script Name:** `myls.sh`
-  - Lists the current directory if called without arguments.
-  - Lists the given directory if provided.
-
-### Task 6: Enhanced Directory Listing Script
-- **Script Name:** `myls_enhanced.sh`
-  - Supports individual options: `-l`, `-a`, `-d`, `-i`, `-R`.
-  - Provides various listing formats and functionalities based on options.
-  - Implements multiple options together as per the bonus.
-
-### Task 7: Type and Permission Checking Script
-- **Script Name:** `mytest.sh`
-  - Checks the type of the given argument (file/directory).
-  - Checks the permissions of the given argument (read/write/execute).
-
-### Task 8: User Information and Process Status Script
-- **Script Name:** `myinfo.sh`
-  - Asks the user for their logname.
-  - Prints detailed information about files and directories in the user's home directory.
-  - Copies user files and directories to `/tmp` directory.
-  - Retrieves the current process status of the user.
+# Lab Two
+### 1. Create a script that asks for user name then send a greeting to him.
+  ![lab2-2 1](https://github.com/ayamaher205/Bash_Script/assets/79773094/bce0e165-41ea-40c7-b438-dbdaf84098e5)
+### 2. Create a script called s1 that calls another script s2 where:
+#### a. In s1 there is a variable called x, it's value 5
+#### b. Try to print the value of x in s2 by two different ways.
+### 3. Create a script called mycp where:
+#### a. It copies a file to another
+#### b. It copies multiple files to a directory.
+### 4. Create a script called mycd where:
+#### a. It changed directory to the user home directory, if it is called without arguments.
+#### b. Otherwise, it change directory to the given directory.
+### 5. Create a script called myls where:
+#### a. It lists the current directory, if it is called without arguments.
+#### b. Otherwise, it lists the given directory.
+### 6. Enhance the above script to support the following options individually:
+#### a. –l: list in long format
+#### b. –a: list all entries including the hiding files.
+#### c. –d: if an argument is a directory, list only its name
+#### d. –i: print inode number
+#### e. –R: recursively list subdirectories
+## Bonus: enhance the above script to support the following Synopsis:
+#### myls -option1 –option2\
+#### myls –option2 –option1\
+#### myls –option1option2\
+#### myls –option2option1
+### 7. Create a script called mytest where:
+#### a. It check the type of the given argument (file/directory)
+#### b. It check the permissions of the given argument (read/write/execute)
+### 8. Create a script called myinfo where:
+#### a. It asks the user about his/her logname.
+#### b. It print full info about files and directories in his/her home directory
+#### c. Copy his/her files and directories as much as you can in /tmp directory.
+#### d. Gets his current processes status.
